@@ -61,7 +61,6 @@ task-receipt/
 ├── assets/
 │   ├── receipt_template.html   # HTML/CSS template
 │   ├── capture.js              # Playwright screenshot tool
-│   └── logo.png
 ├── references/
 │   └── mode-receipt.md         # Step-by-step generation guide
 ├── package.json

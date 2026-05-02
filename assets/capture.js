@@ -18,13 +18,6 @@ async function main() {
   }
 
   const resolvedHtml = path.resolve(htmlPath);
-  const logoUrl = 'file://' + path.resolve(__dirname, 'logo.png');
-
-  let content = fs.readFileSync(resolvedHtml, 'utf8');
-  if (content.includes('{{LOGO}}')) {
-    content = content.replace(/\{\{LOGO\}\}/g, logoUrl);
-    fs.writeFileSync(resolvedHtml, content, 'utf8');
-  }
 
   let chromium;
   try {
